@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jhastter Rollon | CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#030712; --panel:#0a1120; --text:#f1f5f9; --muted:#94a3b8;
+          --cyan:#22d3ee; --blue:#3b82f6; --line:#162033; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:Inter, system-ui, sans-serif; line-height:1.7; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 1.5rem; }
+
+  /* Navigation */
+  nav { position:sticky; top:0; z-index:10; background:rgba(3,7,18,.92);
+        border-bottom:1px solid var(--line); }
+  nav .wrap { display:flex; justify-content:space-between; align-items:center;
+              padding-top:1rem; padding-bottom:1rem; flex-wrap:wrap; gap:.5rem; }
+  .logo { font-family:Outfit, sans-serif; font-weight:700; font-size:1.6rem; }
+  .logo span { color:var(--cyan); }
+  nav ul { display:flex; gap:.5rem; list-style:none; margin:0; padding:0; }
+  nav ul a { padding:.5rem 1rem; border-radius:999px; color:var(--muted); }
+  nav ul a:hover { color:var(--cyan); background:#06202b; }
+
+  /* Hero */
+  .hero { display:grid; grid-template-columns:1fr; gap:3rem;
+          align-items:center; padding:5rem 0 4rem; }
+  .hello { color:var(--blue); font-weight:600; letter-spacing:.15em; margin:0; }
+  h1 { font-family:Outfit, sans-serif; font-size:clamp(2.6rem,6vw,4.5rem);
+       margin:.5rem 0 1rem; line-height:1.1; min-height:1.2em; }
+  .cursor { display:inline-block; width:4px; height:.9em; background:var(--cyan);
+            margin-left:6px; vertical-align:-.05em; animation:blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity:0; } }
+  .intro { color:var(--muted); font-size:1.2rem; max-width:34rem; }
+  .buttons { display:flex; gap:1rem; margin:2rem 0 1.5rem; flex-wrap:wrap; }
+  .btn { padding:.9rem 1.8rem; border-radius:8px; font-weight:600; border:1px solid var(--line); }
+  .btn.primary { background:linear-gradient(135deg,#3b82f6,#2457d6); border-color:transparent;
+                 box-shadow:0 8px 24px rgba(59,130,246,.35); }
+  .photo { justify-self:center; width:min(100%,380px); aspect-ratio:4/5;
+           border:6px solid var(--cyan); border-radius:28px; overflow:hidden;
+           background:var(--panel) center/cover; box-shadow:0 0 40px rgba(34,211,238,.35);
+           display:flex; align-items:center; justify-content:center; color:var(--muted); text-align:center; }
+  .photo img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  /* Sections */
+  section { padding:3.5rem 0; border-top:1px solid var(--line); }
+  h2 { font-family:Outfit, sans-serif; font-size:2rem; margin:0 0 1.5rem; }
+  h2 span { color:var(--cyan); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.25rem; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.5rem; }
+  .card h3 { margin:0 0 .25rem; font-size:1.1rem; }
+  .card p { margin:0; color:var(--muted); }
+  .skills { display:flex; flex-wrap:wrap; gap:.75rem; list-style:none; padding:0; margin:0; }
+  .skills li { background:var(--panel); border:1px solid var(--line); border-radius:999px;
+               padding:.5rem 1.25rem; }
+  footer { text-align:center; color:var(--muted); padding:2rem 0; border-top:1px solid var(--line); }
+
+  @media (max-width:800px) { .hero { grid-template-columns:1fr; } nav ul { flex-wrap:wrap; } }
+  @media (prefers-reduced-motion:reduce) { .cursor { animation:none; } html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#home">Jhastter <span>Rollon</span></a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="hero" id="home">
+    <div>
+      <p class="hello">HEY, I'M JHASTTER</p>
+      <h1><span id="typed"></span><span class="cursor"></span></h1>
+      <p class="intro">I design intuitive digital experiences, develop clean and responsive interfaces, and analyze systems to ensure that technology works purposefully, simplifying complexity and creating real value for the people who use it.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#contact">Get in Touch</a>
+        <a class="btn" href="#about">Explore Portfolio</a>
+      </div>
+    </div>
+
+  </div>
+
+  <section id="about">
+    <h2>About <span>Me</span></h2>
+    <p style="max-width:42rem;color:var(--muted)">I'm Jhastter Rollon, an incoming 4th-year BSIT student from
+      Davao del Norte State College with a strong passion for design, user experience, digital
+      innovation, and building interfaces that are both visually compelling and functionally solid.</p>
+    <h2 style="margin-top:2.5rem">Educa<span>tion</span></h2>
+    <div class="grid">
+      <div class="card"><h3>Bachelor of Science in Information Technology</h3>
+        <p>Davao del Norte State College<br>2023 - 2026 &nbsp;|&nbsp; CGPA: 8.5/10.0</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My <span>Skills</span></h2>
+    <ul class="skills">
+      <li>UI/UX Design</li><li>Graphic Design</li><li>Front-end Development</li>
+      <li>System Analysis</li><li>Figma</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Get in <span>Touch</span></h2>
+    <div class="grid">
+      <a class="card" href="mailto:rollon.jhastter@dnsc.edu.ph"><h3>Email</h3><p>jhastterrollon2003@gmail.com</p></a>
+      <a class="card" href="https://github.com/rollsjazz" target="_blank"><h3>GitHub</h3><p>github.com/Bajazz0703</p></a>
+      <div class="card"><h3>Phone</h3><p>09631436117</p></div>
+      <div class="card"><h3>Location</h3><p>Panabo City, Davao del Norte, Philippines</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 Jhastter Rollon</footer>
+
+<script>
+  // Typing effect that cycles through these words
+  const words = ["Jhastter Rollon", "UI/UX Designer", "Graphic Designer", "System Analyst", "Front-end Developer"];
+  const target = document.getElementById("typed");
+  let w = 0, i = 0, deleting = false;
+  function type() {
+    const word = words[w];
+    target.textContent = word.slice(0, i);
+    let delay = deleting ? 60 : 130;
+    if (!deleting && i === word.length) { deleting = true; delay = 1600; }
+    else if (deleting && i === 0) { deleting = false; w = (w + 1) % words.length; delay = 400; }
+    else { i += deleting ? -1 : 1; }
+    setTimeout(type, delay);
+  }
+  type();
+</script>
+</body>
+</html>
